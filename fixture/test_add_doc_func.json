@@ -1,0 +1,22 @@
+{
+  "new_data": [
+    {"doc_number": "123", "doc_type": "doc", "name": "Владимир", "shelf_number": "3"},
+    {"doc_number": "", "doc_type": "passport", "name": "Александр", "shelf_number": "1"},
+    {"doc_number": "43_150456", "doc_type": "invoice", "name": "Петр", "shelf_number": "4"},
+    {"doc_number": "", "doc_type": "", "name": "", "shelf_number": ""}
+  ],
+  "expected_value":
+  {
+    "documents": [
+      {"type": "passport", "number": "2207_876234", "name": "Василий Гупкин"},
+      {"type": "invoice", "number": "11-2", "name": "Геннадий Покемонов"},
+      {"type": "insurance", "number": "10006", "name": "Аристарх Павлов"},
+      {"type": "doc", "number": "123", "name": "Владимир"}
+    ],
+    "directories": {
+      "1": ["2207_876234", "11-2", "5455_028765"],
+      "2": ["10006"],
+      "3": ["123"]
+    }
+  }
+}
